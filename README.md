@@ -38,3 +38,10 @@ void loop() {
   delay(500); 
 }
 '''# Smart-Streeet-Light-Arduino-
+if (ldrValue < 500) {
+    digitalWrite(ledPin, HIGH); // Turn ON LED in darkness
+  } else {
+    digitalWrite(ledPin, LOW);  // Turn OFF LED in light
+  }
+  delay(500); 
+}
